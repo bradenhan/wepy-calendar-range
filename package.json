@@ -1,0 +1,25 @@
+{
+  "name": "wepy-calendar-range",
+  "version": "0.1.0",
+  "description": "a package of wepy for calendar-range",
+  "main": "calendar.wpy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradenhan/wepy-calendar-range.git"
+  },
+  "author": "bradenhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradenhan/wepy-calendar-range/issues"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-1": "^6.16.0"
+  },
+  "homepage": "https://github.com/bradenhan/wepy-calendar-range#readme"
+}
