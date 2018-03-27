@@ -1,6 +1,6 @@
 {
   "name": "wepy-calendar-range",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a package of wepy for calendar-range",
   "main": "calendar.wpy",
   "scripts": {
