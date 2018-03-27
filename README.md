@@ -3,7 +3,7 @@
 ## 说明
 一个很小的日历选择插件
 
-![](./images/Jietu20180327-174441.jpg)
+![](./images/wepy-calendar-range.jpg)
 
 ## 使用
 
