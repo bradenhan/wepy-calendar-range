@@ -18,7 +18,7 @@ npm install wepy-calendar-range --save
 </template>
 <script>
     import wepy from 'wepy';
-    import Toast from 'wepy-calendar-range';
+    import calendar from 'wepy-calendar-range';
 
     export default class Index extends wepy.page {
         data = {
