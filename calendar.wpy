@@ -105,6 +105,7 @@
     .calendar-week{
       display: flex;
       height: 60rpx;
+      margin: 40rpx 0 0;
       view{
         flex: 1;
         text-align: center;
@@ -121,6 +122,7 @@
         color: #999;
         text-align: center;
         line-height: 60rpx;
+        vertical-align: top;
 
         &.disabed{
           opacity: .5;
