@@ -16,7 +16,7 @@ npm install wepy-calendar-range --save
 ```javascript
 // index.wpy
 <template>
-    <calendar class="calendar" :minDate.sync = "minDate" :startDay.sync = "startDay" :endDay.sync = "endDay" :period.sync = "period"></calendar>
+    <calendar class="calendar" :minDate.sync = "minDate" :startDay.sync = "startDay" :endDay.sync = "endDay" :period.sync = "period" :showPeriod = "showPeriod" :startDayText = "startDayText" :endDayText = "endDayText"></calendar>
 </template>
 <script>
     import wepy from 'wepy';
@@ -45,6 +45,10 @@ npm install wepy-calendar-range --save
 | endDay   | 否      |   null    |结束时间|
 | period    | 否      |   null    |选择周期|
 | minDate  | 否      |   null    |最小时间|
+| showPeriod  | 否  | false  | 是否显示区间值  |
+| startDayText  | 否  | 开始日期  |  开始显示文案 |
+| endDayText  |  否 | 结束日期  |  结束显示文案 |
+
 
 ## 更多说明
 现在还很初级，后续会不断完善

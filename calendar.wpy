@@ -159,25 +159,27 @@
     <view class="date-bar" @tap="showCalendarPanel">
       <view>
         <view>
-          拿到器材
+          {{startDayText}}
         </view>
         <view>
           <!-- <view wx:if="{{startDate.day}}">{{startDate.day}}</view> -->
           <view wx:if="{{startDay}}">{{startDay}}</view>
-          <view wx:else>请选择拿到日期 </view>
+          <view wx:else>请选择{{startDayText}} </view>
         </view>
       </view>
-      <view wx:if="{{period}}">
-        共 <text>{{period}}</text> 天
+      <view wx:if="{{showPeriod}}">
+        <view wx:if="{{period}}">
+          共 <text>{{period}}</text> 天
+        </view>
       </view>
       <view>
         <view>
-          归还器材
+          {{endDayText}}
         </view>
         <view>
           <!-- <view wx:if="{{endDate.day}}">{{endDate.day}}</view> -->
           <view wx:if="{{endDay}}">{{endDay}}</view>
-          <view wx:else>请选择归还日期 </view>
+          <view wx:else>请选择{{endDayText}} </view>
         </view>
       </view>
       </view>
@@ -190,11 +192,11 @@
       </view>
       <view class="select-bar">
         <view>
-          <view>开始时间</view>
+          <view>{{startDayText}}</view>
           <view>{{startDay}}</view>
         </view>
         <view>
-          <view>结束时间</view>
+          <view>{{endDayText}}</view>
           <view>{{endDay}}</view>
         </view>
       </view>
@@ -235,19 +237,35 @@ export default class calendar extends wepy.component {
   props = {
     startDay: {
       type: String,
-      twoWay: true
+      twoWay: true,
+      default: null
     },
     endDay: {
       type: String,
-      twoWay: true
+      twoWay: true,
+      default: null
     },
     period : {
       type: Number,
-      twoWay: true
+      twoWay: true,
+      default: null
     },
     minDate : {
       type: String,
-      twoWay: true
+      twoWay: true,
+      default: null
+    },
+    showPeriod : {
+      type: Boolean,
+      default: false
+    },
+    startDayText: {
+      type: String,
+      default: '开始日期'
+    },
+    endDayText: {
+      type: String,
+      default: '结束日期'
     }
   };
 
