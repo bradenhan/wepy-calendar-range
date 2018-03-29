@@ -442,6 +442,7 @@ export default class calendar extends wepy.component {
 
        // 判断结束时间和开始时间，添加选中状态
       {
+        if(!!this.startDay && !!this.startDay){
           let startObj,
               endObj,
               temArr,
@@ -545,6 +546,7 @@ export default class calendar extends wepy.component {
               }
             }
           }
+        }
       }
 
        // 判断是否有值的情况
